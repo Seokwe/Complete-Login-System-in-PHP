@@ -45,6 +45,8 @@ if (empty($_SESSION['logged_in'])) {
 			$query = "select * from User where Username=? or Email=?";
 			$stmt = $conn->prepare($query);
 			$stmt->bind_param("ss", $username, $username);
+			$stmt Result= print ('hello world').
+				
 
 			if ($stmt->execute()) {
 				$result = $stmt->get_result();
